@@ -26,7 +26,7 @@ const CreateProjectForm = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://project-management-4y6b.onrender.com/api/project",
+        "https://project-management-gcai.onrender.com/api/project",
         formData,
         {
           headers: {
@@ -66,7 +66,7 @@ const CreateProjectForm = () => {
       formData.append('file', csvFile);
 
       const response = await axios.post(
-        "https://project-management-4y6b.onrender.com/api/project/upload/bulk",
+        "https://project-management-gcai.onrender.com/api/project/upload/bulk",
         formData,
         {
           headers: {

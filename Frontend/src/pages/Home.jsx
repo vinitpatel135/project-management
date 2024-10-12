@@ -12,7 +12,7 @@ export default function Home() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://project-management-4y6b.onrender.com/api/project", {
+      const response = await axios.get("https://project-management-gcai.onrender.com/api/project", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -34,7 +34,7 @@ export default function Home() {
   const downloadCsv = async () => {
     try {
       const response = await axios.get(
-        "https://project-management-4y6b.onrender.com/api/project/download/bulk",
+        "https://project-management-gcai.onrender.com/api/project/download/bulk",
         {
           headers: {
             Authorization: `Bearer ${token}`,

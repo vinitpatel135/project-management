@@ -29,7 +29,7 @@ const UpdateProject = () => {
   const makePayment = async (id) => {
     try {
       const response = await axios.patch(
-        `https://project-management-4y6b.onrender.com/api/project/${id}/payment`, // Adjust the endpoint as needed
+        `https://project-management-gcai.onrender.com/api/project/${id}/payment`, // Adjust the endpoint as needed
         {},
         {
           headers: {
@@ -61,7 +61,7 @@ const UpdateProject = () => {
 
     try {
       const response = await axios.patch(
-        `https://project-management-4y6b.onrender.com/api/project/${_id}`,
+        `https://project-management-gcai.onrender.com/api/project/${_id}`,
         updatedProject,
         {
           headers: {

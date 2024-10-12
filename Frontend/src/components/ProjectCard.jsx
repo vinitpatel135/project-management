@@ -27,7 +27,7 @@ const ProjectCard = ({ project, onDelete }) => {
   const deleteProject = async (id) => {
     try {
       const response = await axios.delete(
-        `https://project-management-4y6b.onrender.com/api/project/${id}`,
+        `https://project-management-gcai.onrender.com/api/project/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
